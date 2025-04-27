@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mango Pets</title>
+    <link rel="icon" type="image/png" href="/Users/JUAN/Documents/Proyecto_Pweb/img/huella.png"> <!--Icono de pestaña navegador-->
+    <link rel="stylesheet" href="/Users/JUAN/Documents/Proyecto_Pweb/css/registro.css">
+</head>
+<body>
+    <nav class="barra">
+        <div class="barra_container">
+            <a href="/Users/JUAN/Documents/Proyecto_Pweb/index.html">
+              <img src="/Users/JUAN/Documents/Proyecto_Pweb/img/huella.png" class="logo">
+            </a>
+            <a href="/Users/JUAN/Documents/Proyecto_Pweb/pag/registro.html">Registro</a>
+            <a href="/Users/JUAN/Documents/Proyecto_Pweb/pag/lista_productos.html">Lista de productos</a>
+            <a href="/Users/JUAN/Documents/Proyecto_Pweb/pag/busqueda.html">Busqueda</a>
+        </div>
+      </nav>
+
+    <h1>REGISTRO DE MEDICAMENTOS</h1>
+    <p>En este apartado podrás registrar de manera detallada cada uno de los medicamentos que manejas en tu veterinaria.
+        Incluye información clave como el nombre del producto, número de lote, fabricante, presentación, fecha de vencimiento, número de registro sanitario y cantidad. Este sistema te permite llevar un control preciso y actualizado del inventario, garantizando una gestión segura y eficiente de los medicamentos disponibles.</p>
+    <section class="caja_p">
+        <section class="aux_a">
+          <div class="nombre_campo">Nombre de producto: </div>
+          <div class="nombre_campo"><input type="text" id="nom_produc" ></div>
+        </section>
+        <section class="aux_a">
+            <div class="nombre_campo">Categoria: </div>
+            <div class="nombre_campo">
+                <select name="" id="cat_produc">
+                    <option value=""></option>
+                    <option value="alimento">Alimento</option>
+                    <option value="medicamento">Medicamento</option>
+                    <option value="juguetes">Juguetes</option>
+                </select>
+            </div>    
+        </section>
+        <section class="aux_a">
+            <div class="nombre_campo">Codigo: </div>
+            <div class="nombre_campo"><input type="text" id="cod_produc"></div>
+        </section>
+        <section class="aux_a">
+            <div class="nombre_campo">Precio: </div>
+            <div class="nombre_campo"><input type="number" id="pre_produc"></div>
+        </section>
+        <section class="aux_a">
+            <div class="nombre_campo">Tipo de animal: </div>
+            <div class="nombre_campo">
+                                      <input type="radio" id="tipo_p_produc" name="tipo_animal">Perro
+                                      <input type="radio" id="tipo_g_produc" name="tipo_animal">Gato
+                                      <input type="radio" id="tipo_o_produc" name="tipo_animal">Otro
+            </div>
+        </section>
+        <section class="aux_a">
+            <div class="nombre_campo">Metodo de pago: </div>
+            <div class="nombre_campo">
+                <select name="" id="met_produc">
+                    <option value=""></option>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="transferencia">Transferencia</option>
+                    <option value="nequi">Nequi</option>
+                </select>
+            </div>    
+        </section>
+        <section class="aux_a">
+            <div class="nombre_campo">Nombre colaborardor: </div>
+            <div class="nombre_campo"><input type="text" id="nom_c_produc"></div>
+        </section>
+
+
+
+        <!--
+        <img src="img1.jpg" alt="Opción 1">
+        <img src="img2.jpg" alt="Opción 2">
+        <img src="img3.jpg" alt="Opción 3">
+
+        <label for="imagen">Selecciona una imagen:</label>
+            <input type="file" id="imagen" accept="image/*" onchange="mostrarVistaPrevia(event)">
+        <br><br>
+        <img id="preview" src="#" alt="Vista previa" style="max-width: 300px; display: none;">
+        
+        
+        <section class="aux_a">
+            <div class="nombre_campo">N° de lote: </div>
+            <div class="nombre_campo"><input type="text" id="lot_produc">
+            </div>
+        </section>
+        <section class="aux_a">
+            <div class="nombre_campo">Fabricante: </div>
+            <div class="nombre_campo"><input type="text" id="fabri_produc">
+            </div>
+        </section>
+        
+        <section class="aux_a">
+            <div class="nombre_campo">Fecha de vencimiento: </div>
+            <div class="nombre_campo"><input type="text" id="ven_produc">
+            </div>
+        </section>  
+        -->
+        <div class="aux_b">
+            <button onclick="regis_btn()">Registrar</button>
+            <button onclick="limpiar()">Limpiar</button>
+            <button><a href="/Users/JUAN/Documents/Proyecto_Pweb/index.html">Inicio</a></button>
+        </div>
+      </section>
+
+    <!--Link JavaScript-->
+    <script src="/Users/JUAN/Documents/Proyecto_Pweb/js/registro.js" type="text/javascript"></script>
+</body>
+</html> 
