@@ -73,5 +73,3 @@ document.getElementById("nextBtn").addEventListener("click", function() {
 
 // Mostrar los productos al cargar la pagina
 mostrarProductos();
-
-
