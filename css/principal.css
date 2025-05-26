@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url(/Users/JUAN/Documents/Proyecto_Pweb/img/fondo.png);
+  background: url(../img/fondo.png);
 }
 
 .modal{
@@ -19,7 +19,7 @@ body {
   display: flex ;
   opacity: 0;
   pointer-events: none ;
-}
+  }
 
 .modal_container{
   margin: auto  ;
@@ -29,7 +29,7 @@ body {
   background-color: #fff;
   border-radius: 6px;
   padding: 3em 2.5em;
-  display: grip;
+  display: grid;
   gap: 1em;
   place-items: center;
   grid-auto-columns: 100%; 
@@ -77,12 +77,15 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 50px;
-  gap: 15spx;
+  gap: 15px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .card {
   position: relative;
-  width: 300px;
+  width: 350px;
   height: 350px;
   margin: 20px;
 }
@@ -99,7 +102,6 @@ body {
 
 .card .front {
   transform: perspective(600px) rotateY(0deg);
-  box-shadow: 0 5px 10px #000;
 } 
 
 .card .front img {
@@ -107,13 +109,13 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  max-width: 100%;
 }
 
 .card .front h3 {
   width: 100%;
   height: 100%;
   line-height: 45px;
-  color: #fff;
   background: rgb(2, 2, 2);
   text-align: center;
 }
@@ -158,12 +160,25 @@ body {
   transform: perspective(600px) rotateY(360deg);
 }
 
-.modal--show ~ .tarjeta_I {
+.modal--show ~ .tarjeta_I, .modal--show ~ footer {
   display: none;
 }
 
-.barra {
-  background-color: white;
+.logo {
+  height: 40px;
+}
+
+#titulo{
+  font-size: 50px;
+  text-align: center;
+}
+
+#parrafo{
+  font-size: 20px;
+  text-align: justify;
+}
+
+nav {
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -172,18 +187,17 @@ body {
   margin: 10px;
 }
 
-.barra a {
+nav a {
+  padding: 8px 15px;
+  margin: 0 5px;
+  border-radius: 4px;
   text-decoration: none;
-  color: #0033a0;
-  font-weight: bold;
-  font-size: 16px;
-  transition: color 0.2s;
 }
 
-.barra a:hover {
-  color: #ff9800;
-}
-
-.logo {
-  height: 40px;
+footer {
+  text-align: center;
+  margin-top: 5px;
+  padding: 30px 0;
+  background-color: #FCF5CF;
+  width: 100%;
 }

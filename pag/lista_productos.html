@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mango Pets</title>
-    <link rel="icon" type="image/png" href="/Users/JUAN/Documents/Proyecto_Pweb/img/huella.png"> <!--Icono de pestaña navegador-->
-    <link rel="stylesheet" href="/Users/JUAN/Documents/Proyecto_Pweb/css/lista_productos.css">
+    <link rel="icon" type="image/png" href="../img/huella.png"> <!--Icono de pestaña navegador-->
+    <link rel="stylesheet" href="../css/lista_productos.css">
 </head>
 <body>
 
   <nav class="barra">
     <div class="barra_container">
-        <a href="/Users/JUAN/Documents/Proyecto_Pweb/index.html">
-          <img src="/Users/JUAN/Documents/Proyecto_Pweb/img/huella.png" class="logo">
+        <a href="../index.html" title="Inicio">
+          <img src="../img/huella.png" class="logo">
         </a>
-        <a href="/Users/JUAN/Documents/Proyecto_Pweb/pag/registro.html">
-          <img src="/Users/JUAN/Documents/Proyecto_Pweb/img/Registro.png" class="logo">
+        <a href="./registro.html" title="Registro">
+          <img src="../img/Registro.png" class="logo">
         </a>
-        <a href="/Users/JUAN/Documents/Proyecto_Pweb/pag/lista_productos.html">
-          <img src="/Users/JUAN/Documents/Proyecto_Pweb/img/Lista.png" class="logo">
+        <a href="./lista_productos.html" title="Lista">
+          <img src="../img/Lista.png" class="logo">
         </a>
-        <a href="/Users/JUAN/Documents/Proyecto_Pweb/pag/busqueda.html">
-          <img src="/Users/JUAN/Documents/Proyecto_Pweb/img/Busqueda.png" class="logo">
+        <a href="./busqueda.html" title="Busqueda">
+          <img src="../img/Busqueda.png" class="logo">
         </a>
     </div>
   </nav>
-
-    <h1>LISTA DE PRODUCTOS</h1>
-
-    <input type="text" id="busqueda" placeholder="Buscar producto">
-    <!--<ul id="productList"></ul>-->
+  <section class="orden_section">
+    <h1 id="titulo">LISTA DE PRODUCTOS</h1>
+    <p id="parrafo">En este apartado podras visualizar y gestionar de forma organizada todos los productos registrados en tu veterinaria, incluyendo 
+      medicamentos, accesorios y juguetes. Aqui encontraras informacion clave como el nombre del producto, categoria, imagen, codigo, precio,
+      tipo de animal, metodo de pago y stock disponible. Esta vista te permitira mantener un control preciso y actualizado del inventario, 
+      facilitando la toma de decisiones y asegurando una gestion eficiente de tus productos.</p>
 
     <!-- Tabla para mostrar productos -->
     <section>
@@ -42,7 +43,7 @@
               <th>Precio</th>
               <th>Tipo de Animal</th>
               <th>Metodo de Pago</th>
-              <th>Colaborador</th>
+              <th>Stock Disponible</th>
               <th>Imagen</th>
           </tr>
         </thead>
@@ -55,8 +56,12 @@
         <button id="nextBtn">Siguiente</button>
       </div>
     </section>
+  </section>
+    <footer>
+      <p>Copyright © 2025 Veterinaria MangoPets. Todos los derechos reservados.</p>
+    </footer>
 
-  <script src="/Users/JUAN/Documents/Proyecto_Pweb/js/list_produc.js"></script>
+  <script src="../js/list_produc.js"></script>
     
 </body>
 </html>

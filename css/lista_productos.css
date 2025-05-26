@@ -1,9 +1,27 @@
-body {
-  background: url(/Users/JUAN/Documents/Proyecto_Pweb/img/fondo.png);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
 }
 
-.barra {
-  background-color: white;
+body {
+  background: url(../img/fondo.png);
+}
+
+#titulo{
+  font-size: 50px;
+  text-align: center;
+}
+
+#parrafo{
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+
+nav {
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -12,22 +30,16 @@ body {
   margin: 10px;
 }
 
-.barra a {
+nav a {
+  padding: 8px 15px;
+  margin: 0 5px;
+  border-radius: 4px;
   text-decoration: none;
-  color: #0033a0;
-  font-weight: bold;
-  font-size: 16px;
-  transition: color 0.2s;
-}
-
-.barra a:hover {
-  color: #ff9800;
 }
 
 .logo {
   height: 40px;
 }
-
 
 /* Estilos para la tabla */
 table {
@@ -37,13 +49,16 @@ table {
 }
 
 th, td {
-  padding: 12px;
-  text-align: left;
+  padding: 5px;
+  text-align: center;
   border: 1px solid #ddd;
 }
 
 th {
   background-color: #f4f4f4;
+}
+tr {
+  background-color: white;
 }
 
 /* Paginación */
@@ -64,4 +79,18 @@ button {
 button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+footer {
+  text-align: center;
+  background-color: #FCF5CF;
+  width: 100%;
+  margin-top: 5px;
+  padding: 25px;
+}
+.orden_section{
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
 }

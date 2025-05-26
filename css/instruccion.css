@@ -1,0 +1,62 @@
+*{
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+  background: url(../img/fondo.png);
+ 
+}
+
+.orden_main {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.orden_main h1 {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.orden_main h2 {
+  color: black;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  border-left: 4px solid #00AD28;
+  padding-left: 10px;
+}
+
+.orden_main ol, .orden_main ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.orden_main li {
+  margin-bottom: 2px;
+  line-height: 1.6;
+}
+
+.orden_main strong {
+  color: black  ;
+}
+
+.orden_main button {
+  margin-top: 10px;
+  font-size: 15px;
+  padding: 12px 24px;
+  background-color: #00AD28;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.orden_main button:hover {
+  background-color: #16832F;
+}

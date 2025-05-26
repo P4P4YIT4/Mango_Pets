@@ -4,37 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mango Pets</title>
-    <link rel="icon" type="image/png" href="/Users/JUAN/Documents/Proyecto_Pweb/img/huella.png"> <!--Icono de pestaña navegador-->
-    <link rel="stylesheet" href="/Users/JUAN/Documents/Proyecto_Pweb/css/registro.css">
+    <link rel="icon" type="image/png" href="../img/huella.png"> <!--Icono de pestaña navegador-->
+    <link rel="stylesheet" href="../css/registro.css">
 </head>
 <body>
     <nav class="barra">
-        <div class="barra_container">
-            <a href="/Users/JUAN/Documents/Proyecto_Pweb/index.html">
-              <img src="/Users/JUAN/Documents/Proyecto_Pweb/img/huella.png" class="logo">
-            </a>
-            <a href="/Users/JUAN/Documents/Proyecto_Pweb/pag/registro.html">
-              <img src="/Users/JUAN/Documents/Proyecto_Pweb/img/Registro.png" class="logo">
-            </a>
-            <a href="/Users/JUAN/Documents/Proyecto_Pweb/pag/lista_productos.html">
-              <img src="/Users/JUAN/Documents/Proyecto_Pweb/img/Lista.png" class="logo">
-            </a>
-            <a href="/Users/JUAN/Documents/Proyecto_Pweb/pag/busqueda.html">
-              <img src="/Users/JUAN/Documents/Proyecto_Pweb/img/Busqueda.png" class="logo">
-            </a>
-        </div>
-      </nav>
-    <section>
-        <h1>REGISTRO DE MEDICAMENTOS</h1>
-        <p>En este apartado podras registrar de manera detallada cada uno de los medicamentos que manejas en tu veterinaria.
-        Incluye informacion clave como el nombre del producto, numero de lote, fabricante, presentacion, fecha de vencimiento,
-        numero de registro sanitario y cantidad. Este sistema te permite llevar un control preciso y actualizado del inventario,
-        garantizando una gestion segura y eficiente de los medicamentos disponibles.</p>
-    </section>
+    <div class="barra_container">
+        <a href="../index.html" title="Inicio">
+          <img src="../img/huella.png" class="logo">
+        </a>
+        <a href="./registro.html" title="Registro">
+          <img src="../img/Registro.png" class="logo">
+        </a>
+        <a href="./lista_productos.html" title="Lista">
+          <img src="../img/Lista.png" class="logo">
+        </a>
+        <a href="./busqueda.html" title="Busqueda">
+          <img src="../img/Busqueda.png" class="logo">
+        </a>
+    </div>
+  </nav>
+
+    <section class="orden_section">
+        <h1 id="titulo">REGISTRO DE PRODUCTOS</h1>
+        <p id="parrafo">En este apartado podras registrar de manera detallada cada uno de los medicamentos,accesorios y juguetes
+            que manejas en tu veterinaria. Incluye informacion clave como el nombre del producto, categoría, imagen, codigo, precio,
+            tipo de animal, metodo de pago y stock disponibles. Este sistema te permite llevar un control preciso y actualizado del inventario,
+            garantizando una gestion segura y eficiente de los productos disponibles.
+        </p>
     <section class="caja_p">
+        <form>
         <section class="aux_a">
           <div class="nombre_campo">Nombre de producto: </div>
-          <div class="nombre_campo"><input type="text" id="nom_produc" ></div>
+          <div class="nombre_campo"><input type="text" id="nom_produc"></div>
         </section>
         <section class="aux_a">
             <div class="nombre_campo">Categoria: </div>
@@ -44,21 +46,40 @@
                     <option value="accesorios">Accesorios</option>
                     <option value="alimento">Alimento</option>
                     <option value="juguetes">Juguetes</option>
-                    <option value="medicamento">Medicamento</option> 
+                    <option value="medicamento">Medicamento</option>
+                    <option value="medicamento">Cuidado e Higiene</option> 
                 </select>
             </div>    
         </section>
         <section class="aux_a">
-            <div class="nombre_campo">imagen: </div>
-            <div class="nombre_campo"><input type="file" id="archivo" name="archivo"></div>
+            <div class="nombre_campo">Imagen: </div>
+            <div class="nombre_campo">
+                <select name="" id="archivo">
+                    <option value=""></option>
+                    <option value="arnes.jpg">Arnes</option>
+                    <option value="cobija.jpg">Cobija</option>
+                    <option value="correa.jpg">Correa</option>
+                    <option value="gim_mii.jpg">Gimnacio</option>
+                    <option value="hillis_p.jpg">Hillis</option>
+                    <option value="pollo_p.jpg">Pollo</option>
+                    <option value="protector_c.jpg">Protector Carro</option>
+                    <option value="protector_s.jpg">Protector Silla</option>
+                    <option value="vara.jpg">Vara</option>
+                </select>
+            </div>    
         </section>
+
+        <!--<section class="aux_a">
+            <div class="nombre_campo">Imagen: </div>
+            <div class="nombre_campo"><input type="file" id="archivo" name="archivo"></div>
+        </section>-->
         <section class="aux_a">
             <div class="nombre_campo">Codigo: </div>
-            <div class="nombre_campo"><input type="text" id="cod_produc"></div>
+            <div class="nombre_campo"><input type="text" id="cod_produc" min="1"></div>
         </section>
         <section class="aux_a">
             <div class="nombre_campo">Precio: </div>
-            <div class="nombre_campo"><input type="number" id="pre_produc"></div>
+            <div class="nombre_campo"><input type="number" id="pre_produc" min="1"></div>
         </section>
         <section class="aux_a">
             <div class="nombre_campo">Tipo de animal: </div>
@@ -80,24 +101,25 @@
             </div>    
         </section>
         <section class="aux_a">
-            <div class="nombre_campo">Nombre colaborardor: </div>
-            <div class="nombre_campo">
-                <select name="" id="nom_c_produc">
-                    <option value=""></option>
-                    <option value="1 ">Juan Diego</option>
-                    <option value="2">Camilo</option>
-                    <option value="3">James</option>
-                </select>
-            </div>    
+            <div class="nombre_campo">Stock: </div>
+            <div class="nombre_campo"><input type="number" id="stock_produc"></div>
+ 
         </section>
         <div class="aux_b">
+            <button><a href="./instrucciones.html">instrucciones</a></button>
             <button onclick="regis_btn()">Registrar</button>
-            <button onclick="limpiar()">Limpiar</button>
-            <button><a href="/Users/JUAN/Documents/Proyecto_Pweb/index.html">Inicio</a></button>
+            <button onclick="limpiar()">Limpiar</button>  
         </div>
+        </form>
       </section>
+    </section>
 
+    <footer>
+      <p>Copyright © 2025 Veterinaria MangoPets. Todos los derechos reservados.</p>
+    </footer>
+      
     <!--Link JavaScript-->
-    <script src="/Users/JUAN/Documents/Proyecto_Pweb/js/registro.js" type="text/javascript"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/registro.js" type="text/javascript"></script>
 </body>
 </html>

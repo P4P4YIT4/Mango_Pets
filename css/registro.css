@@ -1,32 +1,44 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: roboto;
+}
+
 body {
   background: url(/Users/JUAN/Documents/Proyecto_Pweb/img/fondo.png);
 }
 
-.caja_p {
-    width: 66%;
-    height: 100px;
+#titulo{
+  font-size: 50px;
+  text-align: center;
+}
 
+#parrafo, #nom_produc, #cat_produc, #cod_produc, #pre_produc, #met_produc, #nom_c_produc, #stock_produc{
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 10px;
 }
 
 .nombre_campo {
-    width: 36%;
+    width: 100%;
     height: 30px;
     margin: 1px;
-    background-color: rgb(156, 199, 239);
+    font-size: 20px;
+    border-radius: 4px;
+    
 }
 
-.aux_a {    
-    display: flex;
+.aux_a {
+    width: 100%;
+    height: 100%;
 }
 
 .aux_b {
-    width: 72.6%;
-    height: 30px;
-    background-color: rgb(67, 170, 67);
+  text-align: center;
 }
 
-.barra {
-  background-color: white;
+nav {
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -35,18 +47,48 @@ body {
   margin: 10px;
 }
 
-.barra a {
+nav a {
+  padding: 8px 15px;
+  margin: 0 5px;
+  border-radius: 4px;
   text-decoration: none;
-  color: #0033a0;
-  font-weight: bold;
-  font-size: 16px;
-  transition: color 0.2s;
-}
-
-.barra a:hover {
-  color: #ff9800;
 }
 
 .logo {
   height: 40px;
+}
+
+button {
+  margin-top: 10px;
+  font-size: 15px;
+  padding: 5px 5px;
+  background-color: #00AD28;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #16832F;
+} 
+
+.orden_section{
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+#nom_produc, #cod_produc, #pre_produc, #met_produc, #stock_produc, #cat_produc, #archivo {
+  width: 100%;
+  height: 20px;
+
+}
+
+footer {
+  text-align: center;
+  background-color: #FCF5CF;
+  width: 100%;
+  margin-top: 5px;
+  padding: 25px;
 }

@@ -1,30 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+  }
+
 body {
   background: url(/Users/JUAN/Documents/Proyecto_Pweb/img/fondo.png);
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  border-bottom: 3px solid black;
+  gap: 30px;
+  margin: 10px;
+}
 
-.barra {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    border-bottom: 3px solid black;
-    gap: 30px;
-    margin: 10px;
-  }
-  
-  .barra a {
-    text-decoration: none;
-    color: #0033a0;
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.2s;
-  }
-  
-  .barra a:hover {
-    color: #ff9800;
-  }
-  
-  .logo {
-    height: 40px;
-  }
+nav a {
+  padding: 8px 15px;
+  margin: 0 5px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px;
+}
+
+/* Estilos para la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tr {
+  background-color: white;
+}
+
+/* Paginación */
+#paginacion {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.orden_section{
+  display: grid;
+}
+.caja_a{
+    width: 100%;
+    height: 100%;
+    margin: 2px;
+}
+
+#busqueda, #filtro_cat, #filtro_tipo{
+  width: 95%;
+}
+
+footer {
+  text-align: center;
+  background-color: #FCF5CF;
+  width: 100%;
+  margin-top: 5px;
+  padding: 25px;
+}
+
+.orden_section{
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+#titulo{
+  font-size: 50px;
+  text-align: center;
+}
+
+#parrafo{
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
